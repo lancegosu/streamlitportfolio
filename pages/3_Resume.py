@@ -14,4 +14,4 @@ st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
 
-pdf_viewer(input="../images/resume.pdf", width=900, height=1200)
+pdf_viewer(input="images/resume.pdf", width=900, height=1200)
