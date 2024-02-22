@@ -79,5 +79,5 @@ with col9:
     - Captain of Club Tennis Team
     """)
 with col10:
-    st.image("/images/spartan.png", width=120)
+    st.image("images/spartan.png", width=120)
 st.caption('Go Spartans!')
