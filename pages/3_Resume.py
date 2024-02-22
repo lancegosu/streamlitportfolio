@@ -1,5 +1,5 @@
 import streamlit as st
-# import base64
+import base64
 
 st.set_page_config(page_title="Lance's Portfolio", layout='wide')
 st.title("Resume")
@@ -14,11 +14,8 @@ st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
 
-# with open("images/resume.pdf", "rb") as f:
-#     base64_pdf = base64.b64encode(f.read()).decode("utf-8")
-#     pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="900" height="1150" type="application/pdf"></iframe>'
-#     st.markdown(pdf_display, unsafe_allow_html=True)
-
-pdf_url = "https://github.com/lancegosu/streamlitportfolio/blob/main/images/resume.pdf"
-pdf_display = f'<iframe src="{pdf_url}" width="900" height="1150"></iframe>'
-st.markdown(pdf_display, unsafe_allow_html=True)
+with open("images/resume.pdf", "rb") as f:
+    base64_pdf = base64.b64encode(f.read()).decode("utf-8")
+    # pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="900" height="1150" type="application/pdf"></iframe>'
+    pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="900" height="1150" type="application/pdf"></iframe>'
+    st.markdown(pdf_display, unsafe_allow_html=True)
