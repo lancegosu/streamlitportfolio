@@ -1,5 +1,5 @@
 import streamlit as st
-import base64
+from streamlit_pdf_viewer import pdf_viewer
 
 st.set_page_config(page_title="Lance's Portfolio", layout='wide')
 st.title("Resume")
@@ -14,7 +14,4 @@ st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
 
-with open("images/resume.pdf", "rb") as f:
-    base64_pdf = base64.b64encode(f.read()).decode("utf-8")
-    pdf_display = f'<embed src="data:application/pdf;base64,{base64_pdf}" width="900" height="1150" type="application/pdf">'
-    st.write(pdf_display, unsafe_allow_html=True)
+pdf_viewer(input="/Users/lance/PycharmProjects/portfolio/images/resume.pdf", width=900, height=1200)
