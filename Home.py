@@ -6,6 +6,7 @@ st.set_page_config(page_title="Lance's Portfolio")
 st.title("👋 Hello world! I'm Lance.")
 
 st.sidebar.header('Project Links')
+st.sidebar.markdown('[RAG with LangChain](https://lcrags.streamlit.app/)')
 st.sidebar.markdown('[SpotOn](https://spoton.streamlit.app/)')
 st.sidebar.markdown('[Qdoc](https://qdocst.streamlit.app/)')
 st.sidebar.markdown('[CooPA](https://coopas.streamlit.app/)')
@@ -35,7 +36,6 @@ lottie_python = load_lottieurl("https://lottie.host/5d248536-e50a-4271-8e23-3a18
 lottie_js = load_lottieurl("https://lottie.host/480a834b-6bd6-466f-a735-867c7dc3edb3/vlX1fIBEEs.json")
 lottie_html = load_lottieurl("https://lottie.host/1253a0ad-986e-46bb-b4dc-b597eb5333c7/jCWHwoyFPx.json")
 lottie_css = load_lottieurl("https://lottie.host/bb426cc8-e5ef-4f2a-8121-80fae8902d43/ce5uvQHdVP.json")
-# lottie_git = load_lottieurl("https://lottie.host/fd50be21-4017-4ad7-876b-17079c6e3ca7/hmOcIQDrwN.json")
 
 st.write("""
 Welcome to my portfolio website! Explore the sidebar to learn a little bit about me, my personal projects, and the resources I have used to study AI.
