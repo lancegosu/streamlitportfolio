@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Lance's Portfolio", layout='wide')
+st.set_page_config(page_title="Lance's Portfolio")
 st.title("AI Projects")
 
 st.sidebar.header('Project Links')
