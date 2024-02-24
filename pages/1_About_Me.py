@@ -4,6 +4,7 @@ st.set_page_config(page_title="Lance's Portfolio", layout='wide')
 st.title("About Me")
 
 st.sidebar.header('Project Links')
+st.sidebar.markdown('[RAG with LangChain](https://lcrags.streamlit.app/)')
 st.sidebar.markdown('[SpotOn](https://spoton.streamlit.app/)')
 st.sidebar.markdown('[Qdoc](https://qdocst.streamlit.app/)')
 st.sidebar.markdown('[CooPA](https://coopas.streamlit.app/)')
@@ -12,6 +13,14 @@ st.sidebar.header('Contact Info')
 st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
+
+with open("images/resume.pdf", "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+
+st.sidebar.download_button(label="Download Resume",
+                           data=PDFbyte,
+                           file_name="Lance-Nguyen-Resume.pdf",
+                           mime='application/octet-stream')
 
 st.header("Where I'm From")
 st.write("I was born and raised in California, a place blessed with some of the most beautiful weather on the planet. Growing up in the Golden State fueled my passion for exploration, be it the bustling city life or the tranquility of the redwood forests. This unique blend of experiences has not only shaped my appreciation for diversity but also influences the creativity I bring to my work as a developer. From the Pacific shores to the tech hubs, California is more than my home; it's a constant source of inspiration. 🌞🌴")
