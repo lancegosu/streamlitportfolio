@@ -4,6 +4,7 @@ st.set_page_config(page_title="Lance's Portfolio", layout='wide')
 st.title("Personal AI Projects")
 
 st.sidebar.header('Project Links')
+st.sidebar.markdown('[RAG with LangChain](https://lcrags.streamlit.app/)')
 st.sidebar.markdown('[SpotOn](https://spoton.streamlit.app/)')
 st.sidebar.markdown('[Qdoc](https://qdocst.streamlit.app/)')
 st.sidebar.markdown('[CooPA](https://coopas.streamlit.app/)')
@@ -12,6 +13,14 @@ st.sidebar.header('Contact Info')
 st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
+
+with open("images/resume.pdf", "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+
+st.sidebar.download_button(label="Download Resume",
+                           data=PDFbyte,
+                           file_name="Lance-Nguyen-Resume.pdf",
+                           mime='application/octet-stream')
 
 st.write("My goal in creating AI projects is to harness the transformative capabilities of Large Language Models (LLMs) and seamlessly integrate them into diverse applications. By leveraging the power of LLMs, I aim to enhance the intelligence, functionality, and user experience of these applications, pushing the boundaries of what AI can achieve in various domains. This endeavor reflects my commitment to unlocking the full potential of artificial intelligence to drive innovation and elevate the impact of technology in our daily lives.")
 
