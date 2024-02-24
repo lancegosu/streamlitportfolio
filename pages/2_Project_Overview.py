@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Lance's Portfolio", layout='wide')
-st.title("Personal AI Projects")
+st.title("AI Projects")
 
 st.sidebar.header('Project Links')
 st.sidebar.markdown('[RAG with LangChain](https://lcrags.streamlit.app/)')
