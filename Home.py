@@ -15,6 +15,14 @@ st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
 
+with open("images/resume.pdf", "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+
+st.sidebar.download_button(label="Download Resume",
+                           data=PDFbyte,
+                           file_name="Lance-Nguyen-Resume.pdf",
+                           mime='application/octet-stream')
+
 
 def load_lottieurl(url: str):
     r = requests.get(url)
