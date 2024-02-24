@@ -31,7 +31,7 @@ with st.expander("**Key Features**:"):
         - **Place Search**: Utilize the Google Places API to search for places based on user queries.
         - **Interactive Map**: Display search results on an interactive map for enhanced user experience.
         
-        **APIs**: OpenAI ChatGPT API, Google Places API, Google Maps API
+        **APIs**: OpenAI API, Google Places API, Google Maps API
         
         **Libraries**: requests
         """)
@@ -43,7 +43,7 @@ with st.expander("**Key Features**:"):
     - **Question-Answering**: Inquire about specific details or seek clarification regarding the article, and the system generates answers based on conversation history and article content.
     - **Conversation History**: Ask follow-up questions based on the ongoing conversation.
     
-    **APIs**: OpenAI ChatGPT API
+    **APIs**: OpenAI API
     
     **Libraries**: OpenAI, requests, BeautifulSoup, PyMuPDF
     """)
@@ -55,7 +55,7 @@ with st.expander("**Key Features**:"):
     - **Language Model Interaction**: Utilize OpenAI's GPT-3.5-turbo for generating contextually informed responses to user queries.
     - **Citation**: Automatically include source URLs when presenting the aggregated content, offering transparency and credibility.
     
-    **APIs**: OpenAI ChatGPT API, Google Custom Search API
+    **APIs**: OpenAI API, Google Custom Search API
     
     **Libraries**: OpenAI, requests, BeautifulSoup
     """)
@@ -66,5 +66,5 @@ with st.expander("**Key Features**:"):
     - **LookItUp**: Allows users to define highlighted text on a webpage using OpenAI's GPT-3.5-turbo.
     - **Persona**: Transforms highlighted text into different styles of language using OpenAI's GPT-3.5-turbo.
 
-    **APIs**: OpenAI ChatGPT API
+    **APIs**: OpenAI API
     """)
