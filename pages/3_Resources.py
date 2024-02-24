@@ -4,6 +4,7 @@ st.set_page_config(page_title="Lance's Portfolio", layout='wide')
 st.title("Educational content:")
 
 st.sidebar.header('Project Links')
+st.sidebar.markdown('[RAG with LangChain](https://lcrags.streamlit.app/)')
 st.sidebar.markdown('[SpotOn](https://spoton.streamlit.app/)')
 st.sidebar.markdown('[Qdoc](https://qdocst.streamlit.app/)')
 st.sidebar.markdown('[CooPA](https://coopas.streamlit.app/)')
@@ -12,6 +13,14 @@ st.sidebar.header('Contact Info')
 st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
+
+with open("images/resume.pdf", "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+
+st.sidebar.download_button(label="Download Resume",
+                           data=PDFbyte,
+                           file_name="Lance-Nguyen-Resume.pdf",
+                           mime='application/octet-stream')
 
 st.markdown("[Harvard Online: CS50P - Introduction to Programming with Python](https://pll.harvard.edu/course/cs50s-introduction-programming-python)")
 st.write("David Malan teaches an enriching course that offers a comprehensive and accessible entry into the world of programming. This course introduces Python, a versatile and widely-used programming language known for its readability and flexibility. Python's prominence in artificial intelligence and machine learning applications adds an extra layer of significance to the course, making it an ideal starting point for those aspiring to go into the exciting realms of AI/ML.")
