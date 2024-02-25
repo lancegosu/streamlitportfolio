@@ -1,7 +1,10 @@
 import streamlit as st
+from Home import add_logo
 
 st.set_page_config(page_title="Lance's Portfolio", layout='wide')
 st.title("Educational content:")
+
+add_logo()
 
 st.sidebar.header('Project Links')
 st.sidebar.markdown('[RAG with LangChain](https://lcrags.streamlit.app/)')
@@ -14,11 +17,11 @@ st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
 
-with open("images/resume.pdf", "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+with open("images/resume.pdf", "rb") as pdf:
+    resume = pdf.read()
 
 st.sidebar.download_button(label="Download Resume",
-                           data=PDFbyte,
+                           data=resume,
                            file_name="Lance-Nguyen-Resume.pdf",
                            mime='application/octet-stream')
 
