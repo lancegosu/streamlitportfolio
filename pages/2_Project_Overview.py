@@ -38,14 +38,14 @@ with c:
     st.image("images/sf-ai.jpg")
 
 st.write("""
-[SpotOn](https://spoton.streamlit.app/) is a web application that integrates the OpenAI API with the Google Places 
+[SpotOn](https://spoton.streamlit.app/) is a review analysis application that integrates OpenAI API with Google Places 
 API, resulting in a question-answering platform about place reviews.
 """)
 with st.expander("**Key Features**:"):
     st.markdown("""
-        - **Review-based Q&A**: Leverage place reviews to answer user queries using OpenAI's GPT-3.5-turbo language model.
-        - **Place Search**: Utilize the Google Places API to search for places based on user queries.
-        - **Interactive Map**: Display search results on an interactive map for enhanced user experience.
+        - **Review-based Q&A**: Leverages place reviews to answer user queries using OpenAI's GPT-3.5-turbo language model.
+        - **Place Search**: Utilizes the Google Places API to search for places.
+        - **Interactive Map**: Displays search results on an interactive map for enhanced user experience.
 
         **APIs**: OpenAI API, Google Places API, Google Maps API
 
@@ -53,13 +53,13 @@ with st.expander("**Key Features**:"):
         """)
 
 st.write("""
-[Qdoc](https://qdocst.streamlit.app/) is a web application that utilizes a LLM to summarize articles and PDFs from a 
+[Qdoc](https://qdocst.streamlit.app/) is an article assistant that utilizes a LLM to summarize articles and PDFs from a 
 given URL. Additionally, it can answer questions regarding the article using the history of the conversation, 
 the article's content, and common knowledge.
 """)
 with st.expander("**Key Features**:"):
     st.markdown("""
-    - **Summarization from URL**: Summarize the contents of an article or PDF by providing a URL.
+    - **Summarization from URL**: Summarizes the contents of an article or PDF by providing a URL.
     - **Question-Answering**: Generates answers based on article content and conversation history.
     - **Conversation History**: Ask follow-up questions based on the ongoing conversation.
 
@@ -69,14 +69,14 @@ with st.expander("**Key Features**:"):
     """)
 
 st.write("""
-[CooPA](https://coopas.streamlit.app/) is a chatbot that uses the OpenAI API to deliver contextually informed answers 
+[CooPA](https://coopas.streamlit.app/) is a chatbot that uses OpenAI API to deliver contextually informed answers 
 by aggregating relevant content from Google search based on user queries.
 """)
 with st.expander("**Key Features**:"):
     st.markdown("""
-    - **Smart Search**: Aggregates content from relevant articles on Google search.
-    - **Language Model Interaction**: Utilize OpenAI's GPT-3.5-turbo for generating contextually informed responses to user queries.
-    - **Citation**: Automatically include source URLs when presenting the aggregated content, offering transparency and credibility.
+    - **Smart Search**: Aggregates content from relevant articles on Google search based on user queries.
+    - **Language Model Interaction**: Utilizes OpenAI's GPT-3.5-turbo for generating contextually informed responses.
+    - **Citation**: Automatically includes source URLs when presenting the aggregated content, offering transparency and credibility.
 
     **APIs**: OpenAI API, Google Custom Search API
 
@@ -84,7 +84,7 @@ with st.expander("**Key Features**:"):
     """)
 
 st.write("""
-[aiXtensions](https://github.com/lancegosu/aixtensions) consists of two independent Chrome extensions: 
+[AI Extensions](https://github.com/lancegosu/AI-Extensions) currently consists of two independent Chrome extensions: 
 LookItUp and Persona, each leveraging OpenAI API for text-related tasks.
 """)
 with st.expander("**Key Features**:"):
