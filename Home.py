@@ -43,7 +43,7 @@ left, right = st.columns(2)
 with left:
     st.image("images/tennis.jpg", caption="Mastered tennis")
 with right:
-    st.image("images/niagarafalls.jpg", caption="Love breathtaking views (Niagara Falls)")
+    st.image("images/niagarafalls.jpg", caption="Captured a rainbow at Niagara Falls")
 
 # Skills
 st.subheader('⚒️ Skills')
