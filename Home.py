@@ -64,9 +64,9 @@ st.write("Welcome to my portfolio website! Explore the sidebar to learn a little
 
 left, right = st.columns(2)
 with left:
-    st.image("images/tennis.jpg", caption="Playing tennis")
+    st.image("images/tennis.jpg", caption="Mastery of tennis")
 with right:
-    st.image("images/niagarafalls.jpg", caption="Catching grand views (Niagara Falls)")
+    st.image("images/niagarafalls.jpg", caption="Niagara Falls, taken in August 2023")
 
 # Skills
 st.subheader('⚒️ Skills')
