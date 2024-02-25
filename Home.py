@@ -1,9 +1,32 @@
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
+import base64
 
 st.set_page_config(page_title="Lance's Portfolio")
 st.title("👋 Hello world! I'm Lance.")
+
+
+def add_logo():
+    with open("images/profile-pic.png", "rb") as img:
+        pic = img.read()
+    base64_string = base64.b64encode(pic).decode("utf-8")
+    logo = f"""
+        <style>
+            [data-testid="stSidebarNav"] {{
+                background-image: url("data:image/png;base64,{base64_string}");
+                background-repeat: no-repeat;
+                background-position: 50% 10%;
+                margin-top: 10%;
+                background-size: 60%;
+                padding-top: 150px;
+            }}
+        </style>
+    """
+    st.markdown(logo, unsafe_allow_html=True)
+
+
+add_logo()
 
 st.sidebar.header('Project Links')
 st.sidebar.markdown('[RAG with LangChain](https://lcrags.streamlit.app/)')
@@ -16,11 +39,11 @@ st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
 
-with open("images/resume.pdf", "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+with open("images/resume.pdf", "rb") as pdf:
+    resume = pdf.read()
 
 st.sidebar.download_button(label="Download Resume",
-                           data=PDFbyte,
+                           data=resume,
                            file_name="Lance-Nguyen-Resume.pdf",
                            mime='application/octet-stream')
 
@@ -41,9 +64,9 @@ st.write("Welcome to my portfolio website! Explore the sidebar to learn a little
 
 left, right = st.columns(2)
 with left:
-    st.image("images/tennis.jpg", caption="Mastered tennis")
+    st.image("images/tennis.jpg", caption="Playing tennis")
 with right:
-    st.image("images/niagarafalls.jpg", caption="Captured a rainbow at Niagara Falls")
+    st.image("images/niagarafalls.jpg", caption="Catching grand views (Niagara Falls)")
 
 # Skills
 st.subheader('⚒️ Skills')
@@ -91,5 +114,5 @@ with col9:
     - Captain of Club Tennis Team
     """)
 with col10:
-    st.image("images/spartan.png", width=120)
+    st.image("/Users/lance/PycharmProjects/portfolio/images/spartan.png", width=120)
 st.caption('Go Spartans!')
