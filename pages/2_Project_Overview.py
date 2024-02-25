@@ -35,7 +35,7 @@ drive innovation and elevate the impact of technology in our daily lives.
 
 l, c, r = st.columns(3)
 with c:
-    st.image("images/ai-sf.jpg")
+    st.image("images/sf-ai.jpg")
 
 st.write("""
 [SpotOn](https://spoton.streamlit.app/) is a web application that integrates the OpenAI API with the Google Places 
