@@ -7,15 +7,15 @@ st.title("AI Projects")
 add_logo()
 
 st.sidebar.header('Project Links')
-st.sidebar.markdown('[RAG with LangChain](https://lcrags.streamlit.app/)')
-st.sidebar.markdown('[SpotOn](https://spoton.streamlit.app/)')
-st.sidebar.markdown('[Qdoc](https://qdocst.streamlit.app/)')
-st.sidebar.markdown('[CooPA](https://coopas.streamlit.app/)')
+st.sidebar.caption('[RAG with LangChain](https://lcrags.streamlit.app/)')
+st.sidebar.caption('[SpotOn](https://spoton.streamlit.app/)')
+st.sidebar.caption('[Qdoc](https://qdocst.streamlit.app/)')
+st.sidebar.caption('[CooPA](https://coopas.streamlit.app/)')
 
 st.sidebar.header('Contact Info')
-st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
-st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
-st.sidebar.markdown("[Github](https://github.com/lancegosu)")
+st.sidebar.caption("[Email](mailto:lancemnguyen@gmail.com)")
+st.sidebar.caption("[LinkedIn](https://linkedin.com/in/lancedin)")
+st.sidebar.caption("[Github](https://github.com/lancegosu)")
 
 with open("images/resume.pdf", "rb") as pdf:
     resume = pdf.read()
