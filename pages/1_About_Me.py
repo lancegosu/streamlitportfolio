@@ -7,7 +7,7 @@ st.title("About Me")
 add_logo()
 
 st.sidebar.header('Project Links')
-st.sidebar.caption('[RAG with LangChain](https://lcrags.streamlit.app/)')
+st.sidebar.caption('[LLM Optimization with RAG](https://lcrags.streamlit.app/)')
 st.sidebar.caption('[SpotOn](https://spoton.streamlit.app/)')
 st.sidebar.caption('[Qdoc](https://qdocst.streamlit.app/)')
 st.sidebar.caption('[CooPA](https://coopas.streamlit.app/)')
