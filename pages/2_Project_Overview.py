@@ -1,7 +1,10 @@
 import streamlit as st
+from Home import add_logo
 
 st.set_page_config(page_title="Lance's Portfolio")
 st.title("AI Projects")
+
+add_logo()
 
 st.sidebar.header('Project Links')
 st.sidebar.markdown('[RAG with LangChain](https://lcrags.streamlit.app/)')
@@ -14,11 +17,11 @@ st.sidebar.markdown("[Email](mailto:lancemnguyen@gmail.com)")
 st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/lancedin)")
 st.sidebar.markdown("[Github](https://github.com/lancegosu)")
 
-with open("images/resume.pdf", "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+with open("images/resume.pdf", "rb") as pdf:
+    resume = pdf.read()
 
 st.sidebar.download_button(label="Download Resume",
-                           data=PDFbyte,
+                           data=resume,
                            file_name="Lance-Nguyen-Resume.pdf",
                            mime='application/octet-stream')
 
@@ -29,6 +32,10 @@ intelligence, functionality, and user experience of these applications, pushing 
 in various domains. This endeavor reflects my commitment to unlocking the full potential of artificial intelligence to 
 drive innovation and elevate the impact of technology in our daily lives.
 """)
+
+l, c, r = st.columns(3)
+with c:
+    st.image("images/ai-sf.jpg")
 
 st.write("""
 [SpotOn](https://spoton.streamlit.app/) is a web application that integrates the OpenAI API with the Google Places 
