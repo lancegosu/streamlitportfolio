@@ -49,4 +49,4 @@ with left:
     """)
 
 with right:
-    st.image("images/me.jpg")
+    st.image("images/me.JPG")
