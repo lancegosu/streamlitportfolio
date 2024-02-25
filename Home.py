@@ -40,7 +40,7 @@ lottie_css = load_lottieurl("https://lottie.host/bb426cc8-e5ef-4f2a-8121-80fae89
 
 st.write("Welcome to my portfolio website! Explore the sidebar to learn a little bit about me, my personal projects, and the resources I have used to study AI.")
 
-image_path = "/images/niagarafalls.jpg"
+image_path = "images/niagarafalls.jpg"
 st.markdown(f'<div style="text-align: center;"><img src="{image_path}" alt="Image" /></div>', unsafe_allow_html=True)
 
 components.html(
