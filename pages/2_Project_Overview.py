@@ -38,7 +38,7 @@ with c:
     st.image("images/sf-ai.jpg")
 
 st.write("""
-[LLM Optimization with RAG](https://lcrags.streamlit.app/)
+[LLM Optimization with RAG](https://lcrags.streamlit.app/) allows users to connect their data with an LLM and use it to generate a response.
 """)
 with st.expander("**Key Features**:"):
     st.markdown("""
