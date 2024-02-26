@@ -43,7 +43,7 @@ st.write("""
 with st.expander("**Key Features**:"):
     st.markdown("""
         - **Retrieval-Augmented Generation**: Connects user data with an LLM.
-        - **LLM Optimization**: Optimizes advanced indexing, vector store embeddings, and retrieval mechanisms
+        - **LLM Optimization**: Optimizes advanced indexing, vector store embeddings, and retrieval mechanisms.
         - **File Upload**: Temporarily stores user uploaded files to interact with the RAG system.
 
         **APIs**: OpenAI API
