@@ -38,6 +38,20 @@ with c:
     st.image("images/sf-ai.jpg")
 
 st.write("""
+[LLM Optimization with RAG](https://lcrags.streamlit.app/)
+""")
+with st.expander("**Key Features**:"):
+    st.markdown("""
+        - **Retrieval-Augmented Generation**: Connects user data with an LLM.
+        - **LLM Optimization**: Optimizes advanced indexing, vector store embeddings, and retrieval mechanisms
+        - **File Upload**: Temporarily stores user uploaded files to interact with the RAG system.
+
+        **APIs**: OpenAI API
+
+        **Libraries**: LangChain
+        """)
+
+st.write("""
 [SpotOn](https://spoton.streamlit.app/) is a review analysis application that integrates OpenAI API with Google Places 
 API, resulting in a question-answering platform about place reviews.
 """)
@@ -53,7 +67,7 @@ with st.expander("**Key Features**:"):
         """)
 
 st.write("""
-[Qdoc](https://qdocst.streamlit.app/) is an article assistant that utilizes a LLM to summarize articles and PDFs from a 
+[Qdoc](https://qdocst.streamlit.app/) is an article assistant that utilizes an LLM to summarize articles and PDFs from a 
 given URL. Additionally, it can answer questions regarding the article using the history of the conversation, 
 the article's content, and common knowledge.
 """)
@@ -85,12 +99,12 @@ with st.expander("**Key Features**:"):
 
 st.write("""
 [AI Extensions](https://github.com/lancegosu/AI-Extensions) currently consists of two independent Chrome extensions: 
-LookItUp and Persona, each leveraging OpenAI API for text-related tasks.
+LookItUp and Persona, each leveraging OpenAI GPT-3.5-turbo for text-related tasks.
 """)
 with st.expander("**Key Features**:"):
     st.markdown("""
-    - **LookItUp**: Allows users to define highlighted text on a webpage using OpenAI's GPT-3.5-turbo.
-    - **Persona**: Transforms highlighted text into different styles of language using OpenAI's GPT-3.5-turbo.
+    - **LookItUp**: Allows users to define highlighted text on a webpage.
+    - **Persona**: Transforms highlighted text into different styles of language.
 
     **APIs**: OpenAI API
     """)
