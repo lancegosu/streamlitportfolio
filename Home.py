@@ -60,7 +60,7 @@ lottie_js = load_lottieurl("https://lottie.host/480a834b-6bd6-466f-a735-867c7dc3
 lottie_html = load_lottieurl("https://lottie.host/1253a0ad-986e-46bb-b4dc-b597eb5333c7/jCWHwoyFPx.json")
 lottie_css = load_lottieurl("https://lottie.host/bb426cc8-e5ef-4f2a-8121-80fae8902d43/ce5uvQHdVP.json")
 
-st.write("Welcome to my portfolio website! Explore the sidebar to learn a little bit about me, my personal projects, and the resources I have used to study AI.")
+st.write("Welcome to my portfolio website! Here is a little bit about me. Explore the sidebar to learn more about my personal projects and the resources I have used to study AI.")
 
 left, right = st.columns(2)
 with left:
