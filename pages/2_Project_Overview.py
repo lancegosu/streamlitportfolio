@@ -57,7 +57,7 @@ API, resulting in a question-answering platform about place reviews.
 """)
 with st.expander("**Key Features**:"):
     st.markdown("""
-        - **Review-based Q&A**: Leverages place reviews to answer user queries using OpenAI's GPT-3.5-turbo language model.
+        - **Review-based Q&A**: Leverages place reviews to answer user queries using GPT-3.5-turbo.
         - **Place Search**: Utilizes the Google Places API to search for places.
         - **Interactive Map**: Displays search results on an interactive map for enhanced user experience.
 
@@ -89,7 +89,7 @@ by aggregating relevant content from Google search based on user queries.
 with st.expander("**Key Features**:"):
     st.markdown("""
     - **Smart Search**: Aggregates content from relevant articles on Google search based on user queries.
-    - **Language Model Interaction**: Utilizes OpenAI's GPT-3.5-turbo for generating contextually informed responses.
+    - **Language Model Interaction**: Utilizes GPT-3.5-turbo for generating contextually informed responses.
     - **Citation**: Automatically includes source URLs when presenting the aggregated content, offering transparency and credibility.
 
     **APIs**: OpenAI API, Google Custom Search API
@@ -99,7 +99,7 @@ with st.expander("**Key Features**:"):
 
 st.write("""
 [AI Extensions](https://github.com/lancegosu/AI-Extensions) currently consists of two independent Chrome extensions: 
-LookItUp and Persona, each leveraging OpenAI GPT-3.5-turbo for text-related tasks.
+LookItUp and Persona, each leveraging OpenAI's GPT-3.5-turbo for text-related tasks.
 """)
 with st.expander("**Key Features**:"):
     st.markdown("""
