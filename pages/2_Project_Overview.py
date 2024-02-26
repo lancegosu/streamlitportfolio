@@ -90,7 +90,7 @@ with st.expander("**Key Features**:"):
     st.markdown("""
     - **Smart Search**: Aggregates content from relevant articles on Google search based on user queries.
     - **Language Model Interaction**: Utilizes GPT-3.5-turbo for generating contextually informed responses.
-    - **Citation**: Automatically includes source URLs when presenting the aggregated content, offering transparency and credibility.
+    - **Citation**: Automatically includes source URLs of the articles, offering transparency and credibility.
 
     **APIs**: OpenAI API, Google Custom Search API
 
