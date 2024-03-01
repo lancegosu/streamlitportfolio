@@ -85,20 +85,23 @@ with col4:
     st_lottie(lottie_css, height=70, width=70, key="css")
     st.markdown("CSS")
 
-st.write("**Tools & Frameworks**")
+st.write("**Databases, Frameworks, & Tools**")
 col5, col6, col7, col8 = st.columns(4)
 with col5:
     st.markdown("RAG")
     st.markdown("Git")
     st.markdown("AWS EC2")
+    st.markdown("SQL")
 with col6:
     st.markdown("Prompt Engineering")
     st.markdown("Django")
     st.markdown("AWS S3")
+    st.markdown("NoSQL")
 with col7:
     st.markdown("LangChain")
     st.markdown("Flask")
     st.markdown("AWS DynamoDB")
+    st.markdown("Docker")
 with col8:
     st.markdown("LlamaIndex")
     st.markdown("PyTorch")
