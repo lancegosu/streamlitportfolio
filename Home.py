@@ -64,7 +64,7 @@ st.write("Welcome to my portfolio website! Here is a little bit about me. Explor
 
 left, right = st.columns(2)
 with left:
-    st.image("images/tennis.jpg", caption="Coached tennis for over 8 years")
+    st.image("images/tennis.jpg", caption="20+ years of tennis experience")
 with right:
     st.image("images/niagarafalls.jpg", caption="Niagara Falls, taken in August 2023")
 
