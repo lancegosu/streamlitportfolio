@@ -30,9 +30,9 @@ add_logo()
 
 st.sidebar.header('Project Links')
 st.sidebar.caption('[LLM Optimization with RAG](https://lcrags.streamlit.app/)')
-st.sidebar.caption('[SpotOn](https://spoton.streamlit.app/)')
-st.sidebar.caption('[Qdoc](https://qdocst.streamlit.app/)')
-st.sidebar.caption('[CooPA](https://coopas.streamlit.app/)')
+st.sidebar.caption('[SpotOn (Review Analysis)](https://spoton.streamlit.app/)')
+st.sidebar.caption('[Qdoc (Article Assistant)](https://qdocst.streamlit.app/)')
+st.sidebar.caption('[CooPA (Search Chatbot)](https://coopas.streamlit.app/)')
 
 st.sidebar.header('Contact Info')
 st.sidebar.caption("[Email](mailto:lancemnguyen@gmail.com)")
