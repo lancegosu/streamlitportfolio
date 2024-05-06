@@ -106,6 +106,7 @@ with col8:
     st.markdown("LlamaIndex")
     st.markdown("PyTorch")
     st.markdown("LLMs")
+    st.markdown("Hugging Face")
 
 # Education
 st.subheader('📚 Education')
